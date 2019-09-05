@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+		<meta http-equiv="cache-control" content="max-age=0">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<link rel="shortcut icon" type="image/x-icon" href="PictureSharing/icons/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="PictureSharing/css/styles.css">
+		<script src="PictureSharing/javascript/clock.js"></script>
+		<title>Picture Sharing</title>
+	</head>
+	<body onload="showTime()">
+		<div id="digitalClock"></div>
+		<form name="register" id="RegisterForm" action="PictureSharing/php/handleRegister.php" method="post">
+			Username <input type="text" name="regUsername">
+			Password <input type="password" name="regPassword">
+			<input type="submit" value="Register">
+		</form>
+		<form name="login" id="LoginForm" action="PictureSharing/php/handleLogin.php" method="post">
+			Username <input type="text" name="logUsername">
+			Password <input type="password" name="logPassword">
+			<input type="submit" value="Login">
+		</form>
+		<br>
+		<form name="logout" id="LogoutForm" action="PictureSharing/php/handleLogout.php" method="post">
+			<input type="submit" value="Logout">
+		</form>
+		<br>
+		<p id="shoutboxLabel">Shoutbox</p>
+		<div class="shoutboxClass">
+			<script src="https://www.shoutbox.com/chat/chat.js.php"></script>
+			<script> var chat = new Chat(12226); </script>
+		</div>
+		<br>
+		<div class="uploadPicturesButtons">
+			<form name="uploadPicturesButtons" id="uploadPicturesButtons" action="PictureSharing/php/handleUploadButtons.php" enctype="multipart/form-data" method="post">
+				<input type="file" name="userfile" id="fileSelectButton" accept="image/*">
+				<input type="submit" value="Upload">
+			</form>
+		</div>
+		<br>
+		<p id="uploadedPicturesLabel">Uploaded Pictures</p>
+		<br>
+		<div class="uploadedPictures" id="uploadedPictures">
+			
+		</div>
+	</body>
+</html>

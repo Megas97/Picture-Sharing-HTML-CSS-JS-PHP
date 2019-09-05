@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	background-image: url("../icons/background.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #FFFFFF;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#digitalClock {
+	height: auto;
+	font-size: 60px;
+	font-family: Orbitron;
+	letter-spacing: 7px;
+	color: #17D4FE;
+	text-align: center;
+}
+
+#RegisterForm {
+	padding-top: 1%;
+	padding-left: 35.9%;
+	width: 35%;
+	height: auto;
+}
+
+#LoginForm {
+	padding-top: 1%;
+	padding-left: 35.7%;
+	width: 35%;
+	height: auto;
+}
+
+#LogoutForm {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+p {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.shoutboxClass {
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 90%;
+}
+
+.uploadPicturesButtons {
+	display: flex;
+	justify-content: center;
+}
+
+.uploadedPictures div {
+	box-sizing: border-box;
+	min-height: 150px;
+	min-width: 150px;
+}
+
+.uploadedPic {
+	text-align: center;
+	width: 40%;
+	height: auto;
+	padding: 5px;
+	margin-bottom: 30px;
+}
+
+.uploadedPictures {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+@media (min-width: 800px) {
+	.uploadedPic {
+		width: 16.5%;
+	}
+}
+
+.pictureButtons {
+	display: inline;
+}
